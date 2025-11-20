@@ -1,0 +1,40 @@
+Who Helped Me:
+Mr. Aiello
+
+What I asked:
+How do we get the index of the max batting average? and Can you please fix my code?
+
+What response I received (summarized):
+He edited my findMaxAverage method to get the index of the max batting average.
+Changed batters.text to batters.txt in DataRunner.java to make my code work. Also changed bToString to toString in UserStory.java.
+
+Who Helped Me:
+Code.org
+
+What I asked:
+N/A, I didn't ask anything but I looked at Lesson 11 Level 6b.
+
+What response I received (summarized):
+I was able to see how the files should be read and it provided a framework for my code since our projects work in similar ways.
+
+Who Helped Me:
+AI
+
+What I asked:
+Can you please debug my code?
+
+What response I received (summarized):
+Edited the code on lines 11-21 of UserStory.java to help the code work as intended. 
+Helped me to create this part of the code(inspiration also taken from code.org):
+
+public Hitter[] createHitters(String bNamesFile, String avgFile) {
+    String[] bNames = FileReader.toStringArray(bNamesFile);
+    double[] avg = FileReader.toDoubleArray(avgFile);
+
+    Hitter[] allHitters = new Hitter[bNames.length]; 
+
+    for (int i = 0; i < bNames.length; i++) {
+      allHitters[i] = new Hitter(bNames[i], avg[i]);
+    }
+    return allHitters;
+  }
